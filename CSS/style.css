@@ -363,6 +363,7 @@ Features
 .book__price--normal {
   text-decoration: line-through;
   padding-right: 6px;
+  color: #bfbfbf;
 }
 
 /* 
@@ -449,21 +450,25 @@ select {
   max-width: 200px;
 }
 
+/* Important animation */
+
 .books__loading {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 60px;
   font-size: 60px;
-  color: #7342d6;
+  color: #ffa500;
 }
 
 .books__loading--spinner {
   display: none !important;
+  /* adding important will not show this animation, if the class doesn't exist */
 }
 
 .books__loading .books__loading--spinner {
   display: block !important;
+  /* will run the animation if '.books__loading exists */
 }
 
 .fa-spinner {
